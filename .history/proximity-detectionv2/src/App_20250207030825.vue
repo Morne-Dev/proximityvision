@@ -69,7 +69,7 @@ function predictWebcam() {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
     predictions.forEach(prediction => {
-      if (prediction.score > 0.66) {
+      if (prediction.score > 0.88) {
         const [x, y, width, height] = prediction.bbox;
         ctx.strokeStyle = 'yellow';
         ctx.lineWidth = 1;

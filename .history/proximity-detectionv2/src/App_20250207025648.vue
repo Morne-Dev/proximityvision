@@ -72,7 +72,7 @@ function predictWebcam() {
       if (prediction.score > 0.66) {
         const [x, y, width, height] = prediction.bbox;
         ctx.strokeStyle = 'yellow';
-        ctx.lineWidth = 1;
+        ctx.lineWidth = 2;
         ctx.strokeRect(x, y, width, height);
         ctx.fillStyle = 'yellow';
         ctx.font = '18px Arial';
